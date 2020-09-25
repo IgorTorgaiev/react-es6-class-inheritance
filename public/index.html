@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <title>React App</title>
+  </head>
+  <body>
+
+    <!-- 1. React ES6. Topic: "Class" -->
+
+    <!-- Method in Class -->
+    
+    <!-- <script>
+    class Car {
+      constructor(model) {
+        this.type = model;
+      }
+      extend() {
+        return 'I have bought the new car the name of which is ' + this.type + ' and the model is "Range Rover".';
+      }
+    }
+    newcar = new Car("Land Rover");
+    document.write(newcar.extend());
+    </script> -->
+
+    <!-- Now we have used the Method in Class as shown above -->
+
+    <!-- ------------------------------------------------------------ -->
+    <!-- Class Inheritance -->
+    <script>
+      class Car {
+        constructor(model) {
+          this.type = model;
+        }
+        extend() {
+          return 'I have bought the new car the name of which is ' + this.type + ' and the model is "Range Rover".';
+        }
+      }
+      class Year extends Car {
+        constructor(model, prod) {
+          super(model);
+          this.model = prod;
+        }
+        continue(){
+          return this.extend() + ' The car was produced in ' + this.model;
+        }
+      }
+      newcar = new Year("Land Rover", "2019");
+      document.write(newcar.continue());
+    </script>
+
+  </body>
+</html>
